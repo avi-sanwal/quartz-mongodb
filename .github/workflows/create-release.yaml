@@ -48,5 +48,13 @@ jobs:
             release_name: quartz-mongodb v${{ env.VERSION }}
             draft: false
             body: |
-                Usage:
+                Maven Usage:
+                    ```
+                    <dependency>
+                      <groupId>io.github.avi-sanwal</groupId>
+                      <artifactId>quartz-mongodb</artifactId>
+                      <version>${{ env.VERSION }}</version>
+                    </dependency>
+                    ```
+                Gradle Usage:
                     `implementation("io.github.avi-sanwal:quartz-mongodb:${{ env.VERSION }}")`
